@@ -28,7 +28,11 @@ const useStyles = makeStyles((theme) => ({
     footer: {
         backgroundColor: theme.palette.background.paper,
         padding: '50px 0'
-    }
+    },
+    avatar: {
+        width: theme.spacing(7),
+        height: theme.spacing(7),
+      },
 }))
 
 export default useStyles

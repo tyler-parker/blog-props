@@ -8,7 +8,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import blogData from './blogData'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,7 +28,7 @@ export default function BlogPost(props) {
         <List className={classes.root}>
         <ListItem alignItems="flex-start">
             <ListItemAvatar>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            <Avatar alt="Remy Sharp" src={props.post.avatar} className={classes.avatar} />
             </ListItemAvatar>
             <ListItemText
             primary={props.post.title}
